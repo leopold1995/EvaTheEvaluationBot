@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<!-- Version 3.0 -->
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <link rel="icon" type="image/jpg" href="/static/Logo_HSG.jpg">
+  <link rel="stylesheet" type="text/css" href="/static/stgallen.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Eva Bot</title>
+</head>
+
+<!--Festlegen der ersten zu erhaltenden Antwort des Chatbots-->
+
+<body>
+
+  <div class="chatbot">
+    <div class="header">
+      <div class="header-logo"></div>
+      <div class="header-botname">Eva</div>
+      <div class="header-button-bar">
+        <!-- <div class="header-button" id="show-privacy-button"><i class="fa fa-info-circle"></i><span>Privacy</span></div> -->
+        <button class="header-button" id="open-help-button"><i class="fa fa-question-circle" disabled></i><span>Help</span></button>
+        <button class="header-button" id="open-feedback-button"><i class="fa fa-comments-o"></i><span>Feedback</span></button>
+        <button class="header-button" id="close-feedback-button" style="display:none;"><i class="fa fa-times"></i><span>Feedback</span></button>
+      </div>
+    </div>
+    <div id="progress"></div>
+    <div id="scrollbox">
+      <div class="messagecontainer">
+        <div id="chatbox">
+          <!--Nothing here in the beginning-->
+        </div>
+      </div>
+    </div>
+    <div id='privacy'>
+      <h3>Declaration of Consent</h3>
+      <p>
+        Please read the Declaration of Consent carefully.
+      </p>
+      <p>
+        I agree that the content of my mesages to the chatbot is sent to university servers for language processing purposes. I further agree that my anonymized data can be used for scientific purposes. I am aware that I can revoke my consent at any time. 
+      </p>
+      <p>
+        We insure full anonymity - a connection of the collected data points to individual participants is not possible.
+      <p>
+        If you have any question about the use of your data, you can contact the survey organizers under the following contact details:
+      </p>
+      <p>
+        <a href="mailto:thiemo.wambsganss@unisg.ch">thiemo.wambsganss@unisg.ch</a>
+      </p>
+      <p>
+        <button type="button" id="privacy-accept" class="button button-primary">I accept it.</button>
+      </p>
+    </div>
+    <div id='feedback'>
+      <h3>Give Eva some feedback!</h3>
+      <form id="feedback-form">
+        <div>
+          <p> How satisfied are you with Eva? </p>
+          <fieldset class="rating">
+            <input type="radio" id="rating-5" name="feedback-rating" value="5"><label for="rating-5"></label>
+            <input type="radio" id="rating-4" name="feedback-rating" value="4"><label for="rating-4"></label>
+            <input type="radio" id="rating-3" name="feedback-rating" value="3"><label for="rating-3"></label>
+            <input type="radio" id="rating-2" name="feedback-rating" value="2"><label for="rating-2"></label>
+            <input type="radio" id="rating-1" name="feedback-rating" value="1"><label for="rating-1"></label>
+          </fieldset>
+        </div>
+        <div>
+          <p> What do you think of the user experience of Eva? </p>
+          <fieldset class="rating">
+            <input type="radio" id="ux-5" name="feedback-ux" value="5"><label for="ux-5"></label>
+            <input type="radio" id="ux-4" name="feedback-ux" value="4"><label for="ux-4"></label>
+            <input type="radio" id="ux-3" name="feedback-ux" value="3"><label for="ux-3"></label>
+            <input type="radio" id="ux-2" name="feedback-ux" value="2"><label for="ux-2"></label>
+            <input type="radio" id="ux-1" name="feedback-ux" value="1"><label for="ux-1"></label>
+          </fieldset>
+        </div>
+        <div>
+          <p> What do you think of Eva? Is Eva a good alternative for course evaluation? </p>
+          <p>
+            <textarea type='text' id="feedback-text" placeholder="Please provide at least two short sentences."></textarea>
+          </p>
+        </div>
+        <div>
+          <p>Is there anything to improve? (Optional)</p>
+          <p>
+            <textarea type='text' id="feedback-improve" placeholder="Like the design? More jokes? Type anything ..."></textarea>
+          </p>
+        </div>
+        <p>
+          <button class="button button-primary" id="feedback-submit"><i class="fa fa-check"></i> Send</button>
+        </p>
+      </form>
+    </div>
+    <div id="answers">
+      <h3>Overview</h3>
+      <div>
+        <h4> Here are your evaluation answers. </h4>
+      </div>
+      <div id="answer-list">
+        <!-- <p>Question 1: blablabla</p> -->
+      </div>
+      <p>
+        <button class="button button-primary" id="answers-hide" type="button"><i class="fa fa-check"></i> Ok</button>
+      </p>
+    </div>
+    <div id="help">
+      <h3>Help</h3>
+      <div>
+        <h4> How to use Eva </h4>
+      </div>
+    </div>
+    <div id="userInput">
+      <input id="textInput" type="text" name="msg" placeholder="Type your message ..." autofocus>
+      <button id="buttonSkip"><i class="fa fa-share"></i></button>
+      <button id="buttonInput"><i class="fa fa-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <script src="/static/evaluationBot.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+5;yes;This is just a test for CSV delimiters.;
+5;yes;"This is a test bla bla ; how are you";
+4;yes;"1 2 3 4 5 6 7 7
+";
+5;yes;Test ssdfsdaj asöldfkj sadlkfj salökdfj lsdka fjslöadkfj lödskafj lksdfj;tslkafj salökdfj asldökfj 
+5;3;1 2 3 4 5 6 7;
+5;1;1 2 3 4 5 6 7 78;
+5;4;Test 2 3 44 5 6 7 8 ;
+5;4;Test Sade asdf asd as f sdasadf fsda;
+5;2;ads sadly alskfj sdlakfj lk sajdflöka sdfjlk dsafjlösdakfj;
+5;3;12 3 4 5. r w df sad fdsa;
+5;3;"Test";
+4;5;1 2 3 4 5 6 7;
+5;4;lkjsd 2 3 4 5 6 7;
+3;5;43lk3425 lök asflkj sadölfkj asdfl jasdlöfk jasldöfj söaldfkjsld akfösaldfk; sadfdsafsda sado asdf
+5;3;Test ljksadf aölsdkfj lkasdjf ölkasdfj ölkadf asdf ;
+5;4;Test. 2 3 4 5 6 7 ;
+5;4;Test. 2 3 4 5 6. 7 7 ;
+5;5;1 2 3 4 5 6 7 ;
+5;5;tet salkfjas lek fölksadjfll fdsajlöfkj dasflkjsdalfk dsalöfkj dsölkf;
+5;4;t1 2 34 lkjflö kadflösadkfj lösdkfj ösdlakfjölaksdf ;
+5;2;jasldfö lkadsfjlöaskdjf adslökfj sdölkafj dslö afjdlöskafj lsdökjfödsal ;
+5;4;would;
+5;4;"would
+";

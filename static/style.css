@@ -1,0 +1,194 @@
+/*alle Farbcodes sind mittels "HTML Color Picker" frei auswählbar und anwendbar*/
+/* ändern der Schriftart/ der Hintergrundfarbe*/
+
+/*Uni St.Gallen Farbcode : grün: #00762C  weiß: #ffffff*/
+/*Uni Kassel Farbcode: magenta: #C60059   weiß: #ffffff*/
+body {
+    font-family: arial; /*Wählen der Schriftart*/
+    background-color: #ffffff;
+  /*  background: url(UniKS.png) #FFFFFF;*/
+    background-repeat:no-repeat;  /*festlegen, ob sich das Bild wiederholen soll, oder nicht!*/
+    background-attachment: fixed;
+    background-position: bottom right;
+
+
+}
+/* ändern der Überschrift/ Chatbot Namens*/
+h1 {
+    color: white;
+    margin-top: auto;
+    text-align: center;
+    border-radius: 5px;
+    overflow:visible;
+    width:inherit;
+    }
+/* ändern der Darstellung des kleinen Chatbotnamens über der Chatbox*/
+h2 {
+    color: grey;
+    font-size: 10px;
+    margin-top: 3px;
+    text-align: left;
+
+}
+/* ändern der Schrift innerhalb der Eingabefensters*/
+h3 {
+    color: black;
+    font-size: 20px;
+    margin-top: 3px;
+    text-align: center;
+}
+/*ändern der Datumsdarstellung*/
+h4 {
+  color: white;
+  margin-top: auto;
+  text-align: center;
+  border-radius: 5px;
+  overflow:visible;
+  position:fixed;
+  width:inherit;
+}
+/*Ändern der Urzeit unterhalb der Chatbox*/
+h5{
+  color: grey;
+  font-size: 10px;
+  margin-right: 15%;
+  text-align: right;
+}
+h6{
+  color: grey;
+  font-size: 10px;
+  margin-right: 15%;
+  text-align: right;
+}
+.header{
+
+  background-color: #C60059;
+  border-radius: 5px;
+  border: 2px solid grey;
+  margin-top:auto;
+
+}
+/* Mit diesem Abschnnitt kann die Box verändert werden, in der die Konversation stattfindet*/
+.messagecontainer{
+	width:100%;
+	  background-color: #ffffff; /*Anpassen der Hintergrundfarbe*/
+
+}
+/*anpassen der Chatbox*/
+#chatbox {
+    margin-left: auto;
+    margin-right: auto;
+    width:auto;
+    padding:10px;
+
+
+    }
+/*Anpassen des Eingabefeldes*/
+#typing {
+  width:100%;
+	  visibility: visible;
+    position:relative;
+
+}
+/*Anpassen der Box, in der die Eingabe stattfinden soll*/
+#userInput {
+    background-color: #F4F4F4; /*Hintergrundfarbe*/
+    border: 2px solid #bfbfbf;
+    border-radius: 5px;
+    padding:5px;
+    box-shadow: 0px 0px 20px 0px black;
+    margin-top:5px;
+
+
+}
+/*Einstellen des "Message" Feldes*/
+#textInput {
+    width: 90%;
+    border: none;
+    border-bottom: 0px solid #F4F4F4;/* Farbe des Randes der Typing-Box*/
+    font-family: arial;
+    font-size: 20px;
+    background-color: #F4F4F4;
+    color: black;
+    max-width: 90%;
+}
+/*Einstellen des "Send" Buttons*/
+#buttonInput {
+    padding: 3px;
+    font-family: arial;
+    font-size: 17px;
+    background-color: #F4F4F4; /* 1 Kasten */
+    color: black;  /*2 Schrift */
+    border-radius: 1px;
+    border-style: outset;
+    border: 3px;
+    border-color: #cccccc;
+    align-items: right;
+    max-width: 10%;
+
+}
+
+/* Einstellungen an den Chatbuttonvorschlägen, welche in der Datenbank festgelegt wurden*/
+.chatSuggest{
+    padding: 3px;
+    margin-top: 15px;
+    margin-right: 15px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /*-webkit-box-shadow: 2px 2px 2px 1px #545454;*/  /*Optional: Schatten*/
+    /*box-shadow: 2px 2px 2px 1px #545454;*/          /*Optional: Schatten*/
+    background: #bfbfbf;
+    cursor: pointer;
+}
+/*Einstellungen am User-Gesprächsfeld*/
+.userText {
+    color: white; /*Schriftfarbe; englische Farbe oder HTML Farbcode*/
+    font-family: arial;
+    font-size: 17px;
+    text-align: left;
+    line-height: 20px;
+    background-color: #C60059; /*Hintergrundfarbe; englische Farbe oder HTML Farbcode*/
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 20%;
+    paddin
+}
+/* Einstellungen am Gesprächsfeld des CHatbots*/
+.botText {
+    color: black; /*Schriftfarbe; englische Farbe oder HTML Farbcode*/
+    font-family: arial;
+    font-size: 17px;
+    text-align: left;
+    line-height: 30px; /*#dbdbdb*/
+    background-color: #F4F4F4; /*Hintergrundfarbe; englische Farbe oder HTML Farbcode*/
+	  -webkit-border-radius: 10px;
+    border-radius: 10px;
+	  padding: 5px;
+	  min-height: 68px;
+    margin-right: 25%;
+    margin-bottom: 2px;
+}
+/*Bei Nutzung eines Avatars*/
+.avatar{
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  max-width: 64px;
+  max-height: 96px;
+}
+
+/* Falls man keinen Avatar nutzen möchte: */
+/*
+.avatar{
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  max-width: 0px;
+  max-height: 0px;
+}*/
+
+#tidbit {
+    position:absolute;
+    bottom:0;
+    right:0;
+    width: 300px;
+}
