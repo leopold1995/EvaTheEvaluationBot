@@ -13,3 +13,13 @@
 4. Server stoppen: Strg+C
 5. Zeile bot.storage.drop() auskommentieren
 6. Server starten: python3 EvaluationBot.py
+
+*Auf Python Anywhere installieren*
+1. Einloggen
+2. Dateien hochladen: Dashboard -> Browse files -> Upload a new file
+3. Neue Webapp erstellen: Dashboard -> All Web apps -> Add new Web app
+4. Wizard benutzen
+** Dateipfad angeben, in dem sich die .py Datei befindet
+** Python 3.8 auswählen
+5. Web app starten: Reload Button
+6. Website aufrufen über Link
