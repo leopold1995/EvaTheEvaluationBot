@@ -1,0 +1,198 @@
+---
+categories:
+  - Conversations
+conversations:
+  -
+    - "What time is it?"
+    - getTIME
+  -
+    - "Can you tell me the time?"
+    - getTIME
+  -
+    - "Do you know what time it is?"
+    - getTIME
+  -
+    - "What day is it?"
+    - getDATE
+  -
+    - Date
+    - getDATE
+  -
+    - Time
+    - getTIME
+  -
+    - Nothing
+    - "Could you please try again?"
+  -
+    - Tell me a joke
+    - "Chuck Norris knows the last digit of PI."
+  -
+    - Tell me a joke
+    - "MacGyver can build an airplane out of gum and paper clips. Chuck Norris can kill him and take it."
+  -
+    - Tell me a joke
+    - "There are no steroids in baseball. Just players Chuck Norris has breathed on."
+  -
+    - Tell me a joke
+    - "My musical knowledge is so poor I thought Kanye West was a railway station and Lana Del Rey a holiday destination."
+  -
+    - Tell me a joke
+    - "How many Germans does it take to change a light bulb? – One. We are very efficient and this is not a joke."
+  -
+    - Tell me a joke
+    - "A man receives a phone call from his doctor. <br>
+    The doctor says, 'I have some good news and some bad news.' <br>
+    The man says, 'OK, give me the good news first.' <br>
+    The doctor says, 'The good news is, you have 24 hours to live.' <br>
+    The man replies, 'Oh no! If that's the good news, then what's the bad news?' <br>
+    The doctor says, 'The bad news is, I forgot to call you yesterday.'"
+  -
+    - Tell me a joke
+    - "Chuck Norris will never have a heart attack. His heart isn't nearly foolish enough to attack him"
+  -
+    - Introduction Eva2
+    - "<p>Hey I’m Eva and I will ask you some questions for the course evaluation of the course 'Methods: empirical social research'. </p>
+    <p> You can talk to me by typing in your message into the textfield or click one of my suggestions. If for some reason you don’t have an answer to a question you can skip the question at any time, by clicking on the skip button below or ask me to skip it. </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('Show me more.');\">Show me more!</button>"
+  -
+    - Introduction Hubert
+    - "<p>Hey I’m Hubert and I will ask you some questions for the course evaluation of the course 'Methods: empirical social research'. </p>
+    <p> You can talk to me by typing in your message into the textfield or click one of my suggestions. If for some reason you don’t have an answer to a question you can skip the question at any time, by clicking on the skip button below or ask me to skip it. </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('Show me more.');\">Show me more!</button>"
+  -
+    - Introduction Rashid
+    - "<p>Hey I’m Rashid and I will ask you some questions for the course evaluation of the course 'Methods: empirical social research'. </p>
+    <p> You can talk to me by typing in your message into the textfield or click one of my suggestions. If for some reason you don’t have an answer to a question you can skip the question at any time, by clicking on the skip button below or ask me to skip it. </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('Show me more.');\">Show me more!</button>"
+  -
+    - Introduction
+    - "<p>Hey, I’m Eva the Evaluation Bot. I will ask you some questions and will guide you through the course evaluation of the course 'Course Name'. </p>
+    <p> You can talk to me by typing in your message into the textfield or click one of my suggestions. If for some reason you don’t have an answer to a question you can skip the question at any time, by clicking on the skip button below or ask me to skip it. </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('Show me more.');\">Show me more!</button>"
+  -
+    - Show me more.
+    - "<p> I would love to talk to you. Ask me a few questions. I can try to improve your mood with some jokes &#129313;. I’m not all-knowing and might have to refer you to my big brother Google for complicated questions. But I will try my best. </p>
+    <p> Now have fun with the Evaluation! </p>
+    <p> PS: I would also love to receive some feedback from you! &#128515; </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('Get me in!');\">Cool, get me in!</button>"
+  -
+    - Get me in!
+    - "<p>Before we start, please read the declaration of consent carefully. </p>
+    <button class=\"chatSuggest\" onclick=\"showPrivacy();\">Show me please.</button>"
+  -
+    - I have read the declaration of consent and accept it.
+    - "<p> Thank you and hello again to the evaluation. </p>
+    <p> First I would like to ask you some short questions concerning the lecture content and the lecture style. After that you are welcome to provide some written feedback. In the end you can decide whether you want to receive the total evaluation results by e-mail. </p>
+    <p> Please provide honest and direct answers. Both are very important for the improvement of your lecturer and the course quality. Are you ready to finally start now? </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('Lets start the evaluation.');\">Yes, let’s start the Evaluation!</button>"
+  -
+    - I have read the declaration of consent and I accept it.
+    - "<p> First I would like to ask you some short questions concerning the lecture content and the lecture style. After that you are welcome to provide some written feedback. In the end you can decide whether you want to receive the total evaluation results by e-mail. </p>
+    <p> Please provide honest and direct answers. Both are very important for the improvement of your lecturer and the course quality. Are you ready to finally start now? </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('Lets start the evaluation.');\">Yes, let’s start the Evaluation!</button>"
+  -
+    - Course structure
+    - "<p> Nice. </p>
+    <p> Please rate the following statement from 1-5 points, with 5 points as highest score. </p>
+    <p> The course content has a good structure so that I was able to understand it easily. </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('1 point');\">1</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('2 points');\">2</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('3 points');\">3</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('4 points');\">4</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('5 points');\">5</button>"
+  -
+    - Course lecturer
+    - "<p> Nice. </p>
+    <p> The lecturer was able to transfer the learning content according to my expectations. </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('1 point');\">1</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('2 points');\">2</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('3 points');\">3</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('4 points');\">4</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('5 points');\">5</button>"
+  -
+    - Course tutor
+    - "<p> Nice. </p>
+    <p> The tutor was able to transfer the learning content according to my expectations. </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('1 point');\">1</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('2 points');\">2</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('3 points');\">3</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('4 points');\">4</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('5 points');\">5</button>"
+  -
+    - Media and methods
+    - "<p> The media and methods used are well suited to communicate the content of the lecture. </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('1 point');\">1</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('2 points');\">2</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('3 points');\">3</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('4 points');\">4</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('5 points');\">5</button>"
+  -
+    - Online tools
+    - "<p> The online tools used are well suited to communicate the content of the lecture. </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('1 point');\">1</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('2 points');\">2</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('3 points');\">3</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('4 points');\">4</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('5 points');\">5</button>"
+  -
+    - Written feedback
+    - "<p> Thank you for your feedback so far. I would like to have some written feedback of you. You can either click on one of my suggestions or provide a written answer. </p>
+    <p> Did the lecture strengthen your interest in the topic? </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('It is highly interesting');\">The topic / lecture is highly interesting</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('It is quite interesting');\">The topic / lecture is quite interesting</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('It is not quite interesting');\">The topic / lecture is quite not for me</button>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('It is not interesting at all');\">The topic / lecture does not interest me at all</button>"
+  -
+    - Written feedback short
+    - "<p> Thank you for your feedback so far. For the next question, you can provide a written answer. </p>
+    <p> Did the lecture strengthen your interest in the topic? </p>"
+  -
+    - Course improvement
+    - "<p> Ok, thank you very much. Now, please answer the next question. </p>
+    <p> Which aspects of the course should be changed so that students benefit more from the course? </p>"
+  -
+    - Change aspects
+    - "<p> Ok, thank you very much. Now, please answer the next question by typing in your feedback. </p>
+    <p> Which aspects of the course should be changed so that students benefit more from the course? </p> "
+  -
+    - Further comments
+    - "<p> Is there anything else you want to mention? If so, please feel free to leave your comments here. </p>
+    <button class=\"chatSuggest\" onclick=\"chatSuggest('No, please skip.');\">No, thanks.</button> "
+  -
+    - Provide email
+    - "<p> Please provide your e-mail address if you are interested in the evaluation result. </p>
+    <p> Your data will be stored anonymously and not related to your evaluation results. </p>
+    <button class=\"chatSuggest\" onclick=\"skip();\">I'm not interested.</button>"
+  -
+    - Give feedback
+    - "<p> If you haven't given me any feedback yet, I would be very happy about it. </p>
+    <button class=\"chatSuggest\" onclick=\"showFeedback(); disableFeedbackButton();\">Give me some feedback</button>
+    <button class=\"chatSuggest\" id=\"feedback-skip-button\" onclick=\"skipFeedback();\" disabled>I already did</button>"
+  -
+    - Give feedback without skip
+    - "<p> Hey I just wanted to let you know that I am a chatbot and would like to have some feedback from you. </p>
+    <button class=\"chatSuggest\" onclick=\"showFeedback(); disableFeedbackButton();\">Give me some feedback</button>"
+  -
+    - Finish evaluation
+    - "<p> Thank you, you are now finished! </p>
+    <button class=\"chatSuggest\" onclick=\"showAnswers();\">Show my answers</button>"
+  -
+    - More details
+    - "<p> Could you be a little more precise? </p>"
+  -
+    - I cannot skip
+    - "<p> Sorry, we can't skip that. </p>"
+  -
+    - I cannot do that
+    - "<p> Sorry, I can't do that right now. </p>"
+  -
+    - Try again
+    - "<p> Could you please try again? </p>"
+  -
+    - I didn't understand
+    - "<p> I didn't quite understand that. </p>"
+  -
+    - Show google result
+    - "<p> I didn't quite understand that. My friend Google may help you. </p>
+    <button class=\"chatSuggest\" onclick=\"window.open('http://google.com');return false;\">Open Google search</button>"
+

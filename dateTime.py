@@ -4,10 +4,9 @@ from pytz import timezone
 import pytz
 from datetime import date
 import calendar
-from botConfig import botTimeZone
 
 def getTime():
-    now = datetime.now(pytz.timezone(botTimeZone))
+    now = datetime.now(pytz.timezone("Europe/Berlin"))
     #now = datetime.utcnow()
     myTimeZone = " MEST"
     mm = str(now.month)
@@ -29,7 +28,7 @@ def getTime():
     return "It is " + hour + ":" + minute
 
 def getDate():
-    now = datetime.now(pytz.timezone(botTimeZone))
+    now = datetime.now(pytz.timezone("Europe/Berlin"))
     mm = now.month
     dd = now.day
     yyyy = str(now.year)
